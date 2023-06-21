@@ -10,23 +10,23 @@
     - 년 별, 구 별로 데이터가 분리되어 있어서 하나의 데이터 프레임으로 연결
     - `*` `-` 특수 문자 제거
   
-![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/a67059cd-7e3c-49c7-b5f7-9c9d3c8a925f)
+![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/a9318cb5-71b3-4543-b8ab-8a58f8aeeaaa)
 
 
 2. 미세먼지가 가장 심한 달은?
     - 지역별로 미세먼지 평균이 가장 높은 월 구하기
     - **겨울에 미세먼지 농도가 높은 것을 확인할 수 있음**
 
-![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/e3bc3dcd-037e-4138-974e-5b3bcf998dc2)
+![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/c2014345-053d-4b25-8d5f-5f54f5456d35)
 
-![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/314ab1e1-e056-4907-a10b-4a0fd09a7b41)
+![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/09916164-3aa7-49e4-9dfe-1901f414abb6)
 
 
 3. 미세먼지가 가장 심한 지역은?
     - 2021년 전국 미세먼지 연평균
     - **서쪽에 위치한 지역(충남, 경기, 인천 등)이 동쪽에 위치한 지역(강원, 울산, 경남 등) 보다 미세먼지 농도가 높음**
 
-![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/5db3b07c-c532-47a0-9362-e0c69c1dc010)
+![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/f878159a-ee00-48af-94f8-a28a8be9e265)
 
 ---
 
@@ -40,12 +40,12 @@
     - avgWs : 평균 풍속(m/s)
     - maxWd : 최다 풍향(16방위)
 
-![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/46a11e09-0b63-46c4-aa80-85272291e7c7)
+![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/c8681633-a94f-474e-b6fd-4fcf47bf9d95)
 
 
 2. 날짜 별로 상세한 비교 및 분석을 위해 일시 데이터를 년/월/일로 분리
 
-![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/c1322d16-0795-454f-b6eb-2567ec5e7a4c)
+![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/9099362d-d21e-4e4e-a218-9b492871efd7)
 
 
 3. dataset 가공
@@ -54,7 +54,8 @@
     - 년, 월, 일 열의 타입을 문자열 타입으로 변경
     - 최다풍향(16방위) 열의 타입을 int형으로 변경
 
-![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/3153419d-97e5-4d92-8b26-3bd5322b0db2)
+![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/42e076ef-cff5-40b5-8b99-4e93ab714fd4)
+
 
 
 4. 모든 데이터 셋이 20150101 ~ 20211231 데이터를 모두 포함하는 것은 아니었음
@@ -67,17 +68,20 @@
     - 월 별 미세먼지 농도를 분석할 것임
     - 일 별 날씨 데이터(기존) → 월별 날씨 데이터(변경)
 
-![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/7f633a0d-18b1-40ef-b545-c4f9c374505d)
+![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/a656192b-3e17-424b-9e50-4ac0b3eeae9b)
+
 
 
 6. 2021년 사계절 최다풍향
     - 16 방위표를 기준으로 나선형 그래프를 그림
   
-        <img width="688" alt="Screenshot 2023-06-21 at 6 07 01 PM" src="https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/9740631f-2951-47e4-aed2-4d6e0025cf58">
+        <img width="680" alt="Screenshot 2023-06-21 at 6 11 58 PM" src="https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/3c6bb250-65aa-4316-a2fd-a2100c4710b4">
+
 
     - 봄, 여름, 가을에는 북동풍이 불고, 겨울에는 북서풍이 부는 것을 확인할 수 있음
 
-![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/9564f200-2785-4cd9-8f91-06aa2d4504a2)
+![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/2149d792-b320-4076-857d-305bae775629)
+
 
 
 ---
@@ -87,13 +91,13 @@
 ### 상관 관계 분석
 - **미세먼지와 최다풍향(16방위)은 상관 관계가 높음**
 
-![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/2dc13c12-0fc5-4bb0-abda-d71ebc60624b)
+![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/33a7a22a-d408-4aaf-a1ef-85bd4f1eed0e)
 
 
 ### 풍향별 미세먼지 농도
 - **북서풍이 불 때 미세먼지 농도가 높음**
 
-![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/4f479fb9-eaa1-49cf-ad34-c3afc26d61e8)
+![image](https://github.com/siyeonSon/wind-dust-analysis/assets/87802191/c1cd9dd9-ad3b-40e4-be87-aa30d27b2985)
 
 ---
 
