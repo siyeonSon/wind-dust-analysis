@@ -1,7 +1,7 @@
 # 🌏풍향에 따른 미세먼지 농도 비교
 문제 정의: 서풍이 부는 달은 미세먼지 농도가 상대적으로 높을 것이다
 
-## 💨미세먼지
+## 💨미세먼지 데이터
 - data-source: [KOSIS 미세먼지(PM2.5) 월별 대기오염도(측정망별,시도별,도시별,측정지점별)](https://kosis.kr/statHtml/statHtml.do?orgId=106&tblId=DT_106N_03_0200076&vw_cd=MT_ZTITLE&list_id=T_7&seqNo=&lang_mode=ko&language=kor&obj_var_id=&itm_id=&conn_path=MT_ZTITLE)
 - 기간: 2015/01/01 ~ 2021/12/31
     - 2022년까지 존재하지만 12월 데이터 부재로 제외
@@ -30,7 +30,7 @@
 
 ---
 
-## 💨풍향
+## 💨풍향 데이터
 - data-source: [기상청_지상(종관, ASOS) 일자료 조회서비스](https://www.data.go.kr/data/15059093/openapi.do)
 - 기간: 2015/01/01 ~ 2021/12/31
     - 미세먼지 데이터와 통일
